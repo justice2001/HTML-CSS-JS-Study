@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数练习</title>
+    <script>
+        function Hero(name, type, blood, attack) {
+            this.name = name;
+            this.type = type;
+            this.blood = blood;
+            this.attack = attack;
+        }
+        var lp = new Hero('廉颇','力量型',500,'近战');
+        var hy = new Hero('后羿','射手型',100,'远程');
+        console.log(lp.name+' '+lp.type+' '+lp.blood+' '+lp.attack);
+        console.log(hy.name+' '+hy.type+' '+hy.blood+' '+hy.attack);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

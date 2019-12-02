@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+
+</head>
+<body>
+    <div id="a"></div>
+
+    <script>
+        var a = document.getElementById("a");
+        var obj = {
+            name: 'justice',
+            age: 18,
+            showWindows: function () {
+                a.innerHTML = "hello";
+            }
+        }
+        console.log(obj.age);
+        obj.showWindows();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数</title>
+    <script>
+        // 构造函数语法:
+        // function 构造函数名() {
+        //         this.属性 = 属性值;
+        //         this.方法 = function () {
+        //
+        //         }
+        // }
+        // 使用:
+        // new 构造函数名();      构造函数名第一个字母大写
+        function Star(uname, age, sex) {
+            this.uname = uname;
+            this.age = age;
+            this.sex = sex;
+        }
+        var justice = new Star('justice', 18, '男');
+        console.log(justice.uname);
+        console.log(justice.age);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
