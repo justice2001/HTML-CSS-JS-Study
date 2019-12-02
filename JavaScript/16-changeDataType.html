@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换数据类型</title>
+    <script>
+        var num = 10;
+        var str = num.toString();
+        console.log(str);
+        console.log(String(num));
+        console.log(num+'');
+        // 转为int型
+        console.log(parseInt('3.14'));
+        console.log(parseInt('3.94'));
+        console.log(parseInt('120px'));
+        console.log(parseInt('rem120px'));
+        // 小数
+        console.log(parseFloat('3.14'));
+        // Number转换
+        console.log(Number('3.14'));
+        // 隐式转换
+        console.log('3.14'-0);
+        console.log('3.14'*1);
+        //转换为boolean
+        console.log(Boolean(''));
+        //''、0、NaN、null、undefined都为false
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
