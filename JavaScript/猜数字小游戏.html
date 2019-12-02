@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+    <script>
+        function getRandom(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        console.log("请输入1-10的数字:")
+        var num = getRandom(1,10);
+        console.log(num);
+        var asw;
+        while (1) {
+            asw = prompt("请输入数字");
+            if (asw > num)
+                alert("数字大了");
+            else if (asw < num)
+                alert("数字小了");
+            else {
+                alert("输入正确");
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

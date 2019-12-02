@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机数</title>
+    <script>
+        //random() 返回随机小数 0-1范围
+        console.log(Math.random());
+        //取两数间的整数
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        console.log(getRandomIntInclusive(1,10));
+        //随机点名
+        var arr_Qiu = ['N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','R','R','R','R','R','R','R','R','R','R','R','R','R','R','R','R','R','R','SR','SR','SR','SR','SR','SR','SSR'];
+        var arr_Ou = ['N','N','N','N','N','N','N','N','N','N','N','N','R','R','R','SR','SR','SR','SR','SR','SR','SSR','SSR','SSR','SSR','SSR','SSR','SSR','SSR','SSR','SSR','SSR','SSR']
+        console.log('非酋:' + arr_Qiu[getRandomIntInclusive(0,arr_Qiu.length - 1)]);
+        console.log('欧皇:' + arr_Ou[getRandomIntInclusive(0,arr_Ou.length - 1)]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

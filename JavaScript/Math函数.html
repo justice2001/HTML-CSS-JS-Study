@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math对象</title>
+    <script>
+        console.log(Math.PI);
+        console.log(Math.max(1,50,30,50,80,180,0));
+        // 自建数学函数
+        var myMath = {
+            PI: Math.PI,
+            max: function () {
+                var max = arguments[0];
+                for(var i = 0;i < arguments.length;i++){
+                    if (max < arguments[i])
+                        max = arguments[i];
+                }
+                return max;
+            },
+            min: function () {
+                var min = arguments[0];
+                for (var i = 0; i < arguments.length; i++) {
+                    if (min > arguments[i])
+                        min = arguments[i];
+                }
+                return min;
+            }
+        }
+        console.log(myMath.PI);
+        console.log(myMath.max(10,50,30,80,36));
+        console.log(myMath.min(10,50,30,6,1,0));
+
+
+        // 取整方法
+        console.log(Math.floor(3.1));//向下取整
+        console.log(Math.ceil(3.1));//向上取整
+        console.log(Math.round(1.1));//四舍五入
+        console.log(Math.round(1.5));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
