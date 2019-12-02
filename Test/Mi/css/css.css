@@ -1,0 +1,136 @@
+.top{
+    height: 40px;
+    background-color: #333333;
+}
+.nav{
+    float: left;
+    width: 950px;
+}
+.nav>a,
+.login-message>a{
+    margin: 0 2px;
+    line-height: 40px;
+    font-size: 14px;
+    color: lightgray;
+}
+
+.login-message>span,
+.nav>span{
+    color: gray;
+}
+.nav>a:hover,
+.login-message>a:hover{
+    color: white;
+}
+.top-box{
+    height: 40px;
+    width: 1227px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+}
+
+.login-message{
+    float: left;
+}
+
+.shopping-cart{
+    line-height: 40px;
+    float: right;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #424242;
+    color: #b0b0b0;
+}
+.shopping-cart:hover{
+    background-color: white;
+    color: #ff6756;
+}
+
+/*导航栏*/
+
+.nav-main{
+    margin: 0 auto;
+    width: 1226px;
+    height: 100px;
+
+}
+.logo{
+    float: left;
+    margin-top: 23px;
+    width: 245px;
+    height: 54px;
+    background-image: url(../img/MI-LOGO.png);
+    background-repeat: no-repeat;
+}
+.fenlei{
+    width: 690px;
+    float: left;
+    line-height: 100px;
+}
+.fenlei>a{
+    font-size: 14px;
+    margin-right: 20px;
+    color: black;
+}
+.fenlei>a:hover{
+    color: #ff6756;
+}
+.search{
+    float: left;
+}
+
+
+
+/*END*/
+/* 1226*460 */
+
+.content {
+    margin: 0 auto;
+    width: 1226px;
+    height: 460px;
+    background-color: pink;
+    background-image: url("../img/32g5qgmu.bmp");
+}
+
+
+/* 235*460 */
+
+.daohang {
+    position: absolute;
+    float: left;
+    width: 235px;
+    height: 460px;
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+.daohang_box {
+    margin-top: 20px;
+}
+
+.daohang_box li {
+    color: white;
+    padding-left: 30px;
+    line-height: 42px;
+}
+
+.daohang_box li:hover {
+    color: white;
+    padding-left: 30px;
+    line-height: 42px;
+    background-color: #ff6700;
+}
+
+.icon_ {
+    margin-right: 20px;
+    line-height: 42px;
+    float: right;
+    width: 20px;
+    height: 42px;
+    /* background-color: #fff; */
+}
+
+.right {
+    float: left;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>996Craft官网-布局</title>
+    <link rel="stylesheet" href="Css/Common.css">
+    <link rel="stylesheet" href="Css/996Craft.css">
+    <script>
+        var i=1;
+        function sleep(n) {
+            var start = new Date().getTime();
+            //  console.log('休眠前：' + start);
+            while (true) {
+                if (new Date().getTime() - start > n) {
+                    break;
+                }
+            }
+        }
+        function changeImgRight() {
+            i++;
+            if(i>28)
+                i=1
+            document.getElementById("image_img").src="img/996Craft/Display/1%20("+i+").png";
+        }
+        function changeImgLeft() {
+            i--;
+            if(i<1)
+                i=28;
+            document.getElementById("image_img").src="img/996Craft/Display/1%20("+i+").png";
+        }
+    </script>
+</head>
+<body id="bck">
+    <div id="all">
+        <div id="left">
+            <ul>
+                <li class="info_text white_text">服务器信息</li>
+                <li class="server_ip">
+                    <span class="text_server_ip">play.mczhengyi.top</span>
+                </li>
+                <li class="left_float">
+                    <span class="text_server_ip">游戏天数:100Days</span>
+                </li>
+                <li class="left_float backgroud_avi">
+                    <span class="text_server_ip">在线人数:1/100</span>
+                </li>
+                <li class="left_float backgroud_avi">
+
+                    <span class="text_server_ip">服务器占用:20%</span>
+                </li>
+                <li class="left_float backgroud_avi">
+                    <span class="text_server_ip">延迟:55ms</span>
+                </li>
+                <li class="left_float backgroud_avi">
+                    <span class="text_server_ip">播放器</span>
+                </li>
+            </ul>
+        </div>
+        <div id="right">
+            <img class="left_button" onclick="changeImgLeft()" src="img/996Craft/left.png" alt="">
+            <img id="image_img" src="img/996Craft/Display/1%20(1).png" alt="">
+            <img src="img/996Craft/right.png" onclick="changeImgRight()" class="right_button">
+        </div>
+    </div>
+</body>
+</html>

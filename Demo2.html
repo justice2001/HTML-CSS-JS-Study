@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+    <script lang="js">
+        var i = 1;
+        function changeImage() {
+            document.getElementById("div").src="img/996Craft/Display/1%20("+i+").png"
+            i++;
+            if(i>=28){
+                i=1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div >
+        <img id="div" src="img/996Craft/Display/1%20(3).png" alt="">
+    </div>
+    <button onclick="changeImage()">dd</button>
+</body>
+</html>

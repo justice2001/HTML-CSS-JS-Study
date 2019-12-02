@@ -1,0 +1,94 @@
+#all {
+    height: 1080px;
+    width: 1920px;
+    /*background-image: url("../img/996Craft/bg.png");*/
+}
+#left{
+    width: 576px;
+    height: 1080px;
+    box-shadow: 5px 0px 15px ;
+    background-image: url("../img/996Craft/bg2.png");
+}
+#right{
+    width: 1344px;
+    height: 1080px;
+}
+#left,#right{
+    float: left;
+}
+#bck{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../img/996Craft/bg.png");
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+ul li {
+    list-style: none;
+}
+.info_text{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 36px;
+    font-family: fz;
+}
+.server_ip{
+    margin-left: 40px;
+    margin-top: 80px;
+    background-image: url("../img/996Craft/unaviable.png");
+    width: 488px;
+    height: 49px;
+    text-align: center;
+}
+.text_server_ip{
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: fz;
+}
+.left_float{
+    margin-left: 40px;
+    margin-top: 50px;
+    background-image: url("../img/996Craft/unaviable.png");
+    width: 488px;
+    height: 49px;
+    text-align: center;
+}
+.backgroud_avi{
+    background-image: url("../img/996Craft/aviliable.png");
+}
+#image_img{
+    /*1220*825*/
+    float: left;
+    left: 0px;
+    top: 0px;
+    width: 1205px;
+    height: 825px;
+    margin-left: 60px;
+    margin-top: 110px;
+    border: dimgray solid 5px;
+    box-shadow: 5px 5px 15px ;
+    /*background-image: url("../img/996Craft/Display.png");*/
+}
+.white_text{
+    color: white;
+}
+.left_button{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 500px;
+    width: 53px;
+    height: 83px;
+    cursor: pointer;
+}
+.right_button{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 500px;
+    width: 53px;
+    height: 83px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合并单元格</title>
+    <style>
+        table tr td{
+            height: 100px;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" width="500px">
+            <tr>
+                <td></td>
+<!--                跨列合并单元格-->
+                <td colspan="2">我是跨列合并后的单元格</td>
+<!--                <td></td>-->
+            </tr>
+            <tr>
+<!--                跨列合并单元格-->
+                <td rowspan="2">我是跨列合并的单元格</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+</body>
+</html>
